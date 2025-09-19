@@ -8,7 +8,6 @@ t = linspace(0, 3, 500);
 theta2 = 2 * pi/3 * sin(t + pi/9);
 theta1 = 2 * pi/3 * sin(t + pi/9);
 
-% Modified forward kinematics function with 6 outputs
 function [x_ee, y_ee, x1, y1, x2, y2] = forward_kinematics_5R(theta1, theta2, a, b, d)
     % Position of passive joints
     x1 = a * cos(theta1);
@@ -109,3 +108,4 @@ for i = 1:length(t)
     pause(delay);
     drawnow;
 end
+
